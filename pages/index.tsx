@@ -85,12 +85,15 @@ export default function Home() {
 						maxFileCount={1}
 					/>
 
+					{/* https://next-cloudinary.spacejelly.dev/components/cldimage/examples */}
 					{imgTag ? (
 						<CldImage
 							width="600"
 							height="600"
 							src={imgTag}
 							alt="Description of my image"
+							crop="thumb"
+							gravity="auto"
 						/>
 					) : (
 						<></>
